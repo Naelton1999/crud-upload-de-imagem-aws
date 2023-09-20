@@ -3,13 +3,7 @@ const express= require('express');
 const server = express();
 server.use(express.json());
 
-const cursos=['Fullstack master', 'Desenvolvimento de games', 'Programação']
-
-
-server.get('/cursos/:index', (req,res)=>{
-    const {index}= req.params
-    return res.json(cursos[index])
-})
+const cursos=['Fullstack master', 'Desenvolvimento de games', 'Programação'];
 
 server.get('/cursos', (req,res)=>{
     return res.json(cursos)
