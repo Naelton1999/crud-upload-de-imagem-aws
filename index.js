@@ -11,8 +11,8 @@ server.use(express.json());
 const s3 = new AWS.S3({
   region: 'sa-east-1', 
   credentials: {
-    accessKeyId: 'AKIAZOFDIGJ6WXTBJEXJ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
   },
 });
 
